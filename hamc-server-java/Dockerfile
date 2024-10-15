@@ -91,5 +91,5 @@ LABEL \
 # 6 Data directory #
 ####################
 
-RUN rm -rf /data/world
-RUN ln -s /addons/minecraft/world /data/world
+RUN rm -rf /data/World
+RUN ln -s /data/World /addons/minecraft/world
