@@ -73,13 +73,13 @@ LABEL \
     io.hass.arch="${BUILD_ARCH}" \
     io.hass.type="addon" \
     io.hass.version=${BUILD_VERSION} \
-    maintainer="williamcorsel (https://github.com/williamcorsel)" \
+    maintainer="williamcorsel (https://github.com/jfbenckhuijsen)" \
     org.opencontainers.image.title="${BUILD_NAME}" \
     org.opencontainers.image.description="${BUILD_DESCRIPTION}" \
     org.opencontainers.image.vendor="Home Assistant Add-ons" \
-    org.opencontainers.image.authors="wiliamcorsel (https://github.com/williamcorsel)" \
+    org.opencontainers.image.authors="wiliamcorsel (https://github.com/jfbenckhuijsen)" \
     org.opencontainers.image.licenses="MIT" \
-    org.opencontainers.image.url="https://github.com/williamcorsel" \
+    org.opencontainers.image.url="https://github.com/jfbenckhuijsen" \
     org.opencontainers.image.source="https://github.com/${BUILD_REPOSITORY}" \
     org.opencontainers.image.documentation="https://github.com/${BUILD_REPOSITORY}/blob/main/README.md" \
     org.opencontainers.image.created=${BUILD_DATE} \
@@ -93,4 +93,4 @@ LABEL \
 
 RUN rm -rf /data/World
 RUN mkdir -p /addons/minecraft/world
-RUN ln -s /data/World /addons/minecraft/world
+RUN ln -s /addons/minecraft/world /data/World
