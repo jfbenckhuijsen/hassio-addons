@@ -85,3 +85,12 @@ LABEL \
     org.opencontainers.image.created=${BUILD_DATE} \
     org.opencontainers.image.revision=${BUILD_REF} \
     org.opencontainers.image.version=${BUILD_VERSION}
+
+
+####################
+# 6 Data directory #
+####################
+
+RUN mkdir /addons/minecraft
+RUN mv /data/world /addons/minecraft/
+RUN ln -s /addons/minecraft/world /data/world
