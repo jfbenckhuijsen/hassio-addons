@@ -92,4 +92,5 @@ LABEL \
 ####################
 
 RUN rm -rf /data/World
+RUN mkdir -p /addons/minecraft/world
 RUN ln -s /data/World /addons/minecraft/world
