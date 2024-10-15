@@ -91,7 +91,5 @@ LABEL \
 # 6 Data directory #
 ####################
 
-RUN mkdir /addons/minecraft
-RUN mv /data/world /addons/minecraft/original_world
-RUN mkdir /addons/minecraft/world
+RUN rm -rf /data/world
 RUN ln -s /addons/minecraft/world /data/world
